@@ -10,9 +10,9 @@ Console.Write(" Введите число N -> ");
 int n = Convert.ToInt32(Console.ReadLine());
 int count = 1;
 
-while(count <= n)
+while (count <= n)
 {
-   Console.WriteLine($"Число{count,5} | {count * count * count,5}");
-   count++; 
+    Console.WriteLine($"Число{count,5} | {count * count * count,5}");
+    count++;
 }
 
