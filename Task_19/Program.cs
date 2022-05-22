@@ -3,16 +3,16 @@
 // 14212 -> нет , 23432 -> да , 12821 -> да .
 
 Console.Write(" Введите пятизначное число -> ");
-string num = Console.ReadLine();
+string num = (Console.ReadLine());
 
 if (num.Length != 5)
 {
-    Console.Write(" Ваше число : {num} - не пятизначное. ");
+    Console.Write($" Ваше число : {num} - не пятизначное. ");
     return;
 }
 
 if (num[0] == num[4] || num[1] == num[3])
 {
-    Console.Write(" Ваше число : {num} -  Палиндром. ");
+    Console.Write($" Ваше число : {num} -  Палиндром. ");
 }
-else Console.Write(" Ваше число : {num} - Не палиндром. ");
+else Console.Write($" Ваше число : {num} - Не палиндром. ");
