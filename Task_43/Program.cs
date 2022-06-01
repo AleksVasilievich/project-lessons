@@ -21,7 +21,7 @@ if (k1 == k2)
 }
 string General(int k1, int b1, int k2, int b2)
 {
-    string result = string.Empty;
+    string result = string.Empty;   
     int x = 0;
     int y = 0;                              // Так как точка общая ->
     x = (b2 - b1) / (k1 - k2);              // k1 * x + b1 = k2 * x + b2

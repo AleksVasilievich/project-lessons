@@ -6,8 +6,8 @@
 
 Console.Write("Введите числа через пробел -> ");
 
-
 int[] array = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
 
 int index1 = 0 ;
 int index2 = array.Length - 1;
