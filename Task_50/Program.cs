@@ -8,3 +8,39 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
+
+Console.WriteLine("Введите позицию строки m ->  ");
+int m = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите позицию столбца n ->  ");
+int n = int.Parse(Console.ReadLine());
+
+int[,] array = new int[3, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+string num = string.Empty;
+void NumArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            if (m == i && n == j) num = array[i, j];
+        }
+    }
+//return num;
+}
+//Console.Write("Такого числа нет");
+NumArray(array);
+
+
+
+
+// void GetArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//              array[i,j] = new Random().Next(10);
+//         }
+//     }
+//     Console.Write(array);
+// }
