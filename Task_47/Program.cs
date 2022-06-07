@@ -18,9 +18,7 @@ double[,] GetArray(int m, int n)
         for (int j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = rndNum.Next(-100, 100) * 0.1;
-            //Console.Write(array[i, j]);
         }
-        //Console.Write(array[i,j]);
     }
     return array;
 }
@@ -31,7 +29,6 @@ void PrintArray(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            //Console.Write($"{array[i, j]}  ");
             Console.Write($"{"{0:F1}"}  ", array[i, j]);
         }
         Console.WriteLine();
