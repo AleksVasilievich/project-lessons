@@ -15,29 +15,33 @@ Console.WriteLine("Введите позицию столбца n ->  ");
 int n = int.Parse(Console.ReadLine());
 
 int[,] array = new int[3, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
-//string num = string.Empty;
+
 void NumArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            // //if (m != i && n != j) return;           //Console.WriteLine("Такого числа в массиве нет") ;
-            // if (m != i || n != j)
-            // {
-            //     Console.WriteLine("Такого числа в массиве нет"); //Console.Write(array[i, j]);
-            // }
-            if ((m == i && n == j))
-            {
-                Console.Write(array[i, j]);         //Console.WriteLine("Такого числа в массиве нет") ;
-            }
-
+            if ((m == i && n == j)) Console.Write(array[i, j]);
         }
-
+        if(m > array.GetLength(0) || n >array.GetLength(1)) Console.WriteLine("Такого числа в массиве нет");
     }
-    //return num;
+
 }
+// void FalseArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             if (m != i && n != j) Console.WriteLine("Такого числа в массиве нет");
+//         }
+//     }
+// }
+
+
 //Console.Write("Такого числа нет");
 NumArray(array);
+//FalseArray(array);
 
 
