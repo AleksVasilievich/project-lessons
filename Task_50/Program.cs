@@ -22,8 +22,12 @@ void NumArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (m == i && n == j) Console.WriteLine(array[i, j]);
+            //if (m != i && n != j) return;           //Console.WriteLine("Такого числа в массиве нет") ;
+            if(m == i && n == j) Console.Write(array[i, j]);
+               
+            
         }
+
     }
     //return num;
 }
