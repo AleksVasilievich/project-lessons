@@ -24,10 +24,11 @@ void NumArray(int[,] array)
         {
             if ((m == i && n == j)) Console.Write(array[i, j]);
         }
-        if(m > array.GetLength(0) || n >array.GetLength(1)) Console.WriteLine("Такого числа в массиве нет");
+        // if(m > array.GetLength(0) || n >array.GetLength(1)) Console.WriteLine("Такого числа в массиве нет");
     }
-
 }
+
+if(m > array.GetLength(0) || n >array.GetLength(1)) Console.WriteLine("Такого числа в массиве нет");
 NumArray(array);
 
 

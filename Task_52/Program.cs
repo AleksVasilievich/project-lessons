@@ -8,6 +8,7 @@
 // Среднее арифметическое каждого
 // столбца: 4,6; 5,6; 3,6; 3.
 
+
 Console.Write("Введите длинну столбцов -> ");
 int m = int.Parse(Console.ReadLine());
 Console.Write("Введите длинну строк -> ");
@@ -34,21 +35,26 @@ void PrintArray(int[,] array)
         Console.WriteLine();
     }
 }
-string ArithmeticMean(int[,] array)
+double ArithmeticMean(int[,] array)
 {
-    string result = String.Empty;
+    double result = 0;
+    // double result = 0;
     for (int n = 0; n < array.GetLength(1); n++)
     {
         int sum = 0;
-        int count = 0;
+        // int count = 0;
         double mean = 0;
         for (int m = 0; m < array.GetLength(0); m++)
         {
             sum += array[m, n];
-            count++;
+            //count++;
         }
-        mean = sum / count;
-        result += mean.ToString() + " ";
+        mean = sum / m;
+        Console.Write(mean);//Split().Select.(int.Parse);
+        //result = mean;
+        //result = result + mean.ToString() + " ";
+        //result = ((byte)mean);
+
     }
     return result;
 }
@@ -60,3 +66,61 @@ FillArray(array);
 PrintArray(array);
 Console.WriteLine();
 Console.WriteLine(ArithmeticMean(array));
+
+
+// Console.Write("Введите длинну столбцов -> ");
+// int m = int.Parse(Console.ReadLine());
+// Console.Write("Введите длинну строк -> ");
+// int n = int.Parse(Console.ReadLine());
+
+// void FillArray(int[,] array)
+// {
+//     for (int m = 0; m < array.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < array.GetLength(1); n++)
+//         {
+//             array[m, n] = new Random().Next(10);
+//         }
+//     }
+// }
+// void PrintArray(int[,] array)
+// {
+//     for (int m = 0; m < array.GetLength(0); m++)
+//     {
+//         for (int n = 0; n < array.GetLength(1); n++)
+//         {
+//             Console.Write($"{array[m, n]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+// string ArithmeticMean(int[,] array)
+// {
+//     string result = string.Empty;
+//     //int mean = 0;
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         //int result = 0;
+//         int sum = 0;
+//         int count = 0;
+//         double mean = 0;
+//         //double[] arr = new double[n];
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+
+//             sum += array[i, j];
+//             count++;
+//         }
+//         //int a = 0;
+//         mean = sum / count;//count;     // mean = sum / count;
+//         result += mean.ToString() + " ";
+//         // return  result;// mean++;
+//     }
+//     return result;
+// }
+// int[,] array = new int[m, n];
+
+// FillArray(array);
+// PrintArray(array);
+// Console.WriteLine();
+// Console.WriteLine(ArithmeticMean(array));

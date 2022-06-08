@@ -12,7 +12,7 @@ int less1Num = 0;
 int i = 0;
 while (i < lengthNum)
 {
-    less1Num = num - num % 10;                                   
+    less1Num = num - num % 10;
     sum = sum + (num - less1Num);
     num = num / 10;
     i++;

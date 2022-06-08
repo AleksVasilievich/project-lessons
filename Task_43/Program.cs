@@ -7,7 +7,7 @@
 
 Console.Write("Введите число - b1 = ");
 int b1 = int.Parse(Console.ReadLine());
-Console.Write("Введите число - k1 = ");
+Console.Write("Введите число - k1 = ");  //Точка пересечения двух прямых.
 int k1 = int.Parse(Console.ReadLine());
 Console.Write("Введите число - b2 = ");
 int b2 = int.Parse(Console.ReadLine());
@@ -29,4 +29,4 @@ string General(int k1, int b1, int k2, int b2)
     result = $"({x},{y})";
     return result;
 }
-Console.Write(General(k1, b1, k2, b2));
+Console.Write(General(k1, b1, k2, b2));  //Точка пересечения двух прямых.
