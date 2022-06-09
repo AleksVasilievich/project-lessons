@@ -54,7 +54,7 @@ double ArithmeticMean(int[,] array)
         //result = mean;
         //result = result + mean.ToString() + " ";
         //result = ((byte)mean);
-
+         //Console.Write($"{Math.Round((float)sum / array.GetLength(0), 1)};  ");
     }
     return result;
 }
