@@ -8,12 +8,12 @@ int m = int.Parse(Console.ReadLine());
 Console.Write("Enter a namber N -> ");
 int n = int.Parse(Console.ReadLine());
 
-NumMN(m, n);
+SumMN(m, n);
 
-int NumMN(int m, int n)
+int SumMN(int m, int n)
 {
     if(m == n) return m;
-    if (m > n) return m + NumMN(m - 1, n);
-    else return m + NumMN(m + 1, n);
+    if (m > n) return m + SumMN(m - 1, n);
+    else return m + SumMN(m + 1, n);
 }
-Console.Write(NumMN(m, n));
+Console.Write(SumMN(m, n));
