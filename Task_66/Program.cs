@@ -12,7 +12,7 @@ SumMN(m, n);
 
 int SumMN(int m, int n)
 {
-    if(m == n) return m;
+    if (m == n) return m;
     if (m > n) return m + SumMN(m - 1, n);
     else return m + SumMN(m + 1, n);
 }
